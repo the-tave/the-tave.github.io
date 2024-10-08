@@ -3,18 +3,19 @@ project:
   output-dir: docs
 
 website:
-  title: "the-tave.github.io"
+  title: "The Tave"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - blog.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: journal
     css: styles.css
     toc: true
 
-editor: visual
+editor: source
 

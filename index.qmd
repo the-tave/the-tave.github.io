@@ -1,11 +1,28 @@
 ---
-title: "the-tave.github.io"
+title: "Anni Tave Overlander"
+resources: CV_ATO24_full.pdf
+image: tavey.jpg
+about: 
+  template: jolla
+  image-shape: round
+  links:
+    - text: Email
+      icon: envelope
+      href: mailto:overlander@uni.kn
+    - text: GitHub
+      icon: github
+      href: https://github.com/the-tave
+    - text: LinkedIn
+      icon: linkedin
+      href: https://www.linkedin.com/in/annika-tave-overlander/
+    - text: CV
+      icon: bullseye
+      href: CV-ATO24_full.pdf
 ---
 
 This is a Quarto website.
 
-It will be _my_ website soon enough.
-Until then - stay put! 
+It will be *my* website soon enough. Until then - stay put!
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 

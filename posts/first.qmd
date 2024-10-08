@@ -1,0 +1,7 @@
+---
+title: "First Blog Post"
+---
+
+This is the very first Blogpost I will write on my own website! 
+
+Yay!

@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "the-tave.github.io",
+    "title": "Anni Tave Overlander",
     "section": "",
     "text": "This is a Quarto website.\nIt will be my website soon enough. Until then - stay put!\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
   },
@@ -12,5 +12,26 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "CV_ATO24_full.html",
+    "href": "CV_ATO24_full.html",
+    "title": "Education",
+    "section": "",
+    "text": "Education\n\n\n# A tibble: 5 × 5\n  what                                                   when  with  where why  \n  &lt;chr&gt;                                                  &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;lis&gt;\n1 PhD                                                    2023… Kons… Univ… &lt;chr&gt;\n2 M.Sc. Psychology: Cognitive and Affective Neuroscience 2020… Dres… TU D… &lt;chr&gt;\n3 B.Sc. Psychology                                       2016… Brem… Univ… &lt;chr&gt;\n4 Abitur (NC: 1.4)                                       2007… Darm… Lich… &lt;chr&gt;\n5 Bilingual Education                                    2009… Bost… Germ… &lt;chr&gt;\n\n\n\n\nTeaching\n\n\n# A tibble: 6 × 5\n  what                                                 when    with  where why  \n  &lt;chr&gt;                                                &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt; &lt;lis&gt;\n1 Statistics 1                                         \"WS 24\" (Exe… Uni … &lt;chr&gt;\n2 Psychological Resarch with R                         \"SS 24\" (Sem… Uni … &lt;chr&gt;\n3 Statistics II & Empirical Researchproject            \"SS 23… (Lec… Hamb… &lt;chr&gt;\n4 Creation of Online Studies and Experimental Practice \"WS 23\" (Sem… Uni … &lt;chr&gt;\n5 Empirical Researchproject                            \"SS 22\" (Blo… Hamb… &lt;chr&gt;\n6 CAN6: Advanced Statistical Methods                   \"WS 21… Tuto… TU D… &lt;chr&gt;\n\n\n\n\n\nWorkshops/ Conference Talks\n\n\n# A tibble: 4 × 5\n  what                                             when        with  where why  \n  &lt;chr&gt;                                            &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt; &lt;lis&gt;\n1 Celebrating 30 Years of Web-based Experimenting  September … Symp… Uni … &lt;chr&gt;\n2 dropR: Analyze and Visualize Dropout in Research July 24     useR… Salz… &lt;chr&gt;\n3 Art, Therapy & Mindfulness                       May 24      Work… Uni … &lt;chr&gt;\n4 Psychological Research in WEXTOR.eu              April 24    Work… Uni … &lt;chr&gt;\n\n\n\n\nAwards\n\n\n# A tibble: 1 × 3\n  what                                                               when  with \n  &lt;chr&gt;                                                              &lt;chr&gt; &lt;chr&gt;\n1 Karl-and-Charlotte-Bühler-Prize for excellent teaching (TU Dresde… 2023  &lt;NA&gt; \n\n\n\n\nWork Experience\n\n\n# A tibble: 5 × 5\n  what                      when              with                   where why  \n  &lt;chr&gt;                     &lt;chr&gt;             &lt;chr&gt;                  &lt;chr&gt; &lt;lis&gt;\n1 Student Assistant         2018 - Jun 2023   \"Personality Psych.: … Univ… &lt;chr&gt;\n2 Student Assistant         Jul 2021 - Mar 22 \"General Psych.: A1-P… TU D… &lt;chr&gt;\n3 Freelance Social Media    2020 - 2021       \"psylife-magazine\"     Berl… &lt;chr&gt;\n4 Private Tutor for English 2013 - 2015       \"\"                     Darm… &lt;chr&gt;\n5 Assistant Dance Teacher   2013 - 2015       \"'Tanzschule Stroh'\"   Darm… &lt;chr&gt;\n\n\n\n\nSkills\n\n\n# A tibble: 4 × 3\n  what                      when        with \n  &lt;chr&gt;                     &lt;chr&gt;       &lt;chr&gt;\n1 Microsoft-Office          \"IT Skills\" &lt;NA&gt; \n2 GIMP editing              \" \"         &lt;NA&gt; \n3 WordPress: Website Design \" \"         &lt;NA&gt; \n4 Git (version control)     \" \"         &lt;NA&gt; \n\n\n# A tibble: 4 × 3\n  what              when           with \n  &lt;chr&gt;             &lt;chr&gt;          &lt;chr&gt;\n1 R & R-Studio      \"Data Science\" &lt;NA&gt; \n2 LaTeX & Shiny     \" \"            &lt;NA&gt; \n3 Matlab & SPSS     \" \"            &lt;NA&gt; \n4 HTML & JavaScript \" \"            &lt;NA&gt; \n\n\n# A tibble: 3 × 3\n  what                                         when        with \n  &lt;chr&gt;                                        &lt;chr&gt;       &lt;chr&gt;\n1 German & English: Fluent                     \"Languages\" &lt;NA&gt; \n2 Spanish: Advanced                            \" \"         &lt;NA&gt; \n3 French, Norwegian & Russian: Basic Knowledge \" \"         &lt;NA&gt; \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPublications\nReips, U.-D., Overlander, A. T. & Bannert, M. (2024). Dropout analysis: A method for data from Internet -based research and dropR , a n R -based Web App and package to analyze and visualize dropout [Manuscript submitted for publication]. Behavior Research Methods.\nKandler, C., Overlander, A. T. & Bleidorn, W. (in preparation). Life events and change in broad- and narrow-sense personality characteristics. https://osf.io/u7z9b/\n\nRoth, L., Caffier, J., Reips, U.-D., Nuerk, H.-C., Overlander, A. T., & Cipora, K. (2024). One and only SNARC? Spatial-numerical associations are not fully flexible and depend on both relative and absolute number magnitude [Manuscript submitted for publication]. Royal Society Open Science. https://rr.peercommunityin.org/articles/rec?id=808\n\nRoth, L., Cipora, K., Overlander, A. T., Nuerk, H.-C., & Reips, U.-D. (in preparation). Shape of SNARC: How task-dependent are spatial-numerical associations? A highly powered online experiment. OSF Preprints. https://osf.io/4wpv6/"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "First Blog Post\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/first.html",
+    "href": "posts/first.html",
+    "title": "First Blog Post",
+    "section": "",
+    "text": "This is the very first Blogpost I will write on my own website!\nYay!"
   }
 ]
