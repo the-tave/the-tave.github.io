@@ -1,0 +1,14 @@
+---
+title: "the-tave.github.io"
+---
+
+This is a Quarto website.
+
+It will be _my_ website soon enough.
+Until then - stay put! 
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+```{r}
+1 + 1
+```
