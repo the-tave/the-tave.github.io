@@ -1,0 +1,39 @@
+---
+title: "Projects"
+---
+
+Here you can find all the projects that I am currently working on.
+Most of them are R-based and my focus lies in making solid statistics and psychological methods available to everyone.
+If you happen to find a mistake somewhere, have ideas for further features or just want to gush about the beauty of Open Code don't hesitate to contact me!
+
+
+```{r echo = F}
+library(tibble)
+library(kableExtra)
+
+tribble(
+   ~Project, ~Description,
+  text_spec("Statistik Picker", link = "the-tave.shinyapps.io/Statistik-Picker"), "Study Tool for learning statistics in a fun and accessible way. It provides explanations as well as fun simulations and interactive tools (currently only in German). It can even be installed as an app on mobile devices!",
+  
+  text_spec("Psychological Research with R", link = "the-tave.github.io/psych-research-with-r"), "An online book targetted at psychology students starting to learn R. From installation to a finished, automated statistical report in R Markdown, it covers all the basics needed to really profit from R knowledge!",
+  
+  text_spec("dropR package", link = "iscience-kn.github.io/dropR"), "R package to facilitate dropout analysis by condition. Dropout is an important measure to determine participants' motivation and also validity of results. This package & web app are to help make dropout analysis a routine step of data analysis in research.",
+  
+  text_spec("rextor package", link = "iscience-kn.github.io/rextor"), "R package to help read in WEXTOR data into R. Offers help with basic data preperation as well as styling graphical output and basic help from Rex right inside of R Studio!"
+) %>% 
+  # vitae::brief_entries(
+  #   Desc,
+  #   Project
+  # )
+  # dplyr::mutate(model = cell_spec(row.names(.), "html", link = Link)) %>%
+  kable("html", escape = FALSE) |>
+  # kbl()%>%
+  kable_minimal()
+```
+
+
+<!-- About this site -->
+
+<!-- ```{r} -->
+<!-- 1 + 1 -->
+<!-- ``` -->

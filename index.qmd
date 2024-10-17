@@ -8,7 +8,7 @@ about:
   links:
     - text: Email
       icon: envelope
-      href: mailto:overlander@uni.kn
+      href: mailto:overlander@uni-konstanz.de
     - text: GitHub
       icon: github
       href: https://github.com/the-tave
@@ -20,12 +20,18 @@ about:
       href: CV-ATO24_full.pdf
 ---
 
-This is a Quarto website.
+Welcome to my corner of the internet! 
 
-It will be *my* website soon enough. Until then - stay put!
+Feel free to contact me using the options below or learn more about my academic career.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+You can also learn more about my [Projects](/projects.qmd) - maybe some of it will help you or your students?
 
-```{r}
-1 + 1
-```
+<!-- This is a Quarto website. -->
+
+<!-- It will be *my* website soon enough. Until then - stay put! -->
+
+<!-- To learn more about Quarto websites visit <https://quarto.org/docs/websites>. -->
+
+<!-- ```{r} -->
+<!-- 1 + 1 -->
+<!-- ``` -->
