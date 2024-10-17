@@ -15,7 +15,7 @@ tribble(
    ~Project, ~Description,
   text_spec("Statistik Picker", link = "https://the-tave.shinyapps.io/Statistik-Picker"), "Study Tool for learning statistics in a fun and accessible way. It provides explanations as well as fun simulations and interactive tools (currently only in German). It can even be installed as an app on mobile devices!",
   
-  text_spec("Psychological Research with R", link = "https://the-tave.github.io/psych-research-with-r"), "An online book targetted at psychology students starting to learn R. From installation to a finished, automated statistical report in R Markdown, it covers all the basics needed to really profit from R knowledge!",
+  text_spec("Psychological Research with R", link = "https://the-tave.github.io/psych_research_with_r"), "An online book targetted at psychology students starting to learn R. From installation to a finished, automated statistical report in R Markdown, it covers all the basics needed to really profit from R knowledge!",
   
   text_spec("dropR package", link = "https://iscience-kn.github.io/dropR"), "R package to facilitate dropout analysis by condition. Dropout is an important measure to determine participants' motivation and also validity of results. This package & web app are to help make dropout analysis a routine step of data analysis in research.",
   
@@ -28,6 +28,10 @@ tribble(
   # dplyr::mutate(model = cell_spec(row.names(.), "html", link = Link)) %>%
   kable("html", escape = FALSE) |>
   column_spec(1, width = "15em") |> 
+  row_spec(1, color = "#e85620") |> 
+  row_spec(2, color = "#800080") |> 
+  row_spec(3, color = "#3c8dbc") |> 
+  row_spec(4, color =  "#44aa47") |> 
   # kbl()%>%
   kable_minimal()
 ```
