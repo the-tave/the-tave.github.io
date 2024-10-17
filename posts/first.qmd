@@ -1,5 +1,15 @@
 ---
 title: "First Blog Post"
+subtitle: Learn how to use quarto for website building and blog crafting
+# <!-- description: | -->
+# <!--   Callouts are an excellent way to draw extra attention to certain concepts, or to more clearly indicate that certain content is supplemental or applicable to only some scenarios. -->
+categories:
+  - Random
+author: Anni Tave
+date: 10/17/2024
+image: mathlabala_2.png
+image-alt: "Purple and red mandala created in Matlab."
+
 ---
 
 This is the very first Blogpost I will write on my own website! 
