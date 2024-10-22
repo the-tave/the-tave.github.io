@@ -15,9 +15,12 @@ about:
     - text: LinkedIn
       icon: linkedin
       href: https://www.linkedin.com/in/annika-tave-overlander/
+    - text: Google Scholar
+      icon: google
+      href: https://scholar.google.com/citations?hl=en&user=M_IN1BUAAAAJ
     - text: CV
       icon: bullseye
-      href: CV-ATO24_full.pdf
+      href: CV_ATO24_full.pdf
 ---
 
 Welcome to my corner of the internet! 
