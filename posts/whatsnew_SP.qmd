@@ -1,0 +1,45 @@
+---
+title: "What's New with Stats Picker"
+subtitle: One of the first projects that I started during my Ph.D. is now shining in a new light!
+description: |
+    I'm excited to announce the latest update to the Statistik-Picker app, now featuring complete English translations and enhanced mobile functionality! Check it out under [the-tave.shinyapps.io/Statistik-Picker](https://the-tave.shinyapps.io/Statistik-Picker)
+categories:
+  - Projects
+author: Anni Tave
+date: 01/16/2025 # `r Sys.Date()`
+image: Stats_Picker.png
+image-alt: "Stats Picker Logo."
+---
+
+## Full English Translations
+
+Originally developed in German, the Statistics Picker now offers a fully translated English version, making it accessible to a broader audience. This enhancement ensures that users worldwide can utilize the app without language barriers.
+
+## Progressive Web App (PWA) Capabilities
+
+Experience the convenience of accessing Statistics Picker directly from your mobile device. 
+
+## How to Use the App
+
+- Access the App: Visit Statistics Picker on your preferred device.
+- Install as PWA: On mobile devices, tap the "Add to Home Screen" option in your browser settings to install the app.
+- Select Language: Choose between German and English based on your preference.
+- Navigate: Follow the on-screen instructions to input your data characteristics.
+- Receive Recommendations: Obtain tailored suggestions for statistical methods suitable for your analysis.
+- Dive Deep: Read up on statistical procedures and build up or refresh your knowledge.
+- Look at the Data: Experience distributions and statistical testing with digestible simulations on different topics.
+
+## About the Stats Picker
+
+The Statistics Picker is a user-friendly tool designed to assist students and professionals in selecting appropriate statistical methods for their data analysis needs. 
+With an intuitive interface and comprehensive guidance, it simplifies the decision-making process in statistical analysis.
+
+It also offers a more in-depth explanation section (_Deep Dive_) as well as many different _Simulations_, more of which are continuously added. 
+Stay tuned for a simulation on how p-values originate!
+
+## Feedback and Support
+
+Your feedback is invaluable in enhancing the Statistics Picker. 
+Feel free to share your thoughts or report any issues by contacting me through the app's _About_ section or send me an e-mail at [overlander@uni.kn](mailto:overlander@uni.kn)
+
+Stay tuned for more updates and features aimed at improving your statistical analysis experience!
