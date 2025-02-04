@@ -14,6 +14,13 @@
     "text": "This is the very first Blogpost I will write on my own website!\nYay!"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Anni Tave Overlander",
+    "section": "",
+    "text": "Welcome to my corner of the internet! ✨\nI am a Ph.D. candidate in Methods of Psychology and I am a bit of a statistics and R nerd. Feel free to contact me using the options below or learn more about my academic career.\nYou can also learn more about my Projects - maybe some of it will help you or your students?"
+  },
+  {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Blog",
@@ -21,11 +28,39 @@
     "text": "What’s New with Stats Picker\n\n\nOne of the first projects that I started during my Ph.D. is now shining in a new light!\n\n\nI’m excited to announce the latest update to the Statistik-Picker app, now featuring complete English translations and enhanced mobile functionality! Check it out under the-tave.shinyapps.io/Statistik-Picker \n\n\n\n\n\nJan 16, 2025\n\n\nAnni Tave\n\n\n\n\n\n\n\n\n\n\n\n\nFirst Blog Post\n\n\nLearn how to use quarto for website building and blog crafting\n\n\n\n\n\n\n\n\nOct 17, 2024\n\n\nAnni Tave\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Anni Tave Overlander",
+    "objectID": "in_progress/firstphdyear.html",
+    "href": "in_progress/firstphdyear.html",
+    "title": "Reflecting on a first PhD Year",
     "section": "",
-    "text": "Welcome to my corner of the internet! ✨\nI am a Ph.D. candidate in Methods of Psychology and I am a bit of a statistics and R nerd. Feel free to contact me using the options below or learn more about my academic career.\nYou can also learn more about my Projects - maybe some of it will help you or your students?"
+    "text": "Looking back, what do you wish you had known before starting your PhD?\n\nfreedom = self-management"
+  },
+  {
+    "objectID": "in_progress/firstphdyear.html#what-i-wish-i-had-known",
+    "href": "in_progress/firstphdyear.html#what-i-wish-i-had-known",
+    "title": "Reflecting on a first PhD Year",
+    "section": "",
+    "text": "Looking back, what do you wish you had known before starting your PhD?\n\nfreedom = self-management"
+  },
+  {
+    "objectID": "in_progress/firstphdyear.html#challenges-or-what-nobody-tells-you-about-doing-your-phd",
+    "href": "in_progress/firstphdyear.html#challenges-or-what-nobody-tells-you-about-doing-your-phd",
+    "title": "Reflecting on a first PhD Year",
+    "section": "Challenges (or What nobody tells you about doing your PhD)",
+    "text": "Challenges (or What nobody tells you about doing your PhD)\nWhat has been the biggest challenge during your PhD, and how did you overcome it?\n\nworking in a big research team with different schedules & priorities\n\ncommunication is absolutely key and so is figuring out what you need how & when\n\nfinancing can be hard so applying for grants and stipends is really important (and looks good on a resume ;))"
+  },
+  {
+    "objectID": "in_progress/firstphdyear.html#resources-and-support",
+    "href": "in_progress/firstphdyear.html#resources-and-support",
+    "title": "Reflecting on a first PhD Year",
+    "section": "Resources and Support",
+    "text": "Resources and Support\nWhat resources or support (e.g., from KRS) have been particularly helpful for you?\nIn general I very much appreciate the culture here at the University of Konstanz. Everyone from the admin staff e.g., is so nice and helpful which is not always a given in my experience. So I can’t really name just one resource, it’s really a combination. In our department specifically, we have a lovely departmental advisor who is always there for questions, so knowing that has been a huge help!\nWhen it comes to more academic support, I love the Get S*** Done Days organized by the Doctoral Researcher Council as well as collaborative writing times. Especially when working on writing a paper and prioritizing focused work, it is wonderful to have peers around you, concentrated and working on their own projects for motivation and moral support!"
+  },
+  {
+    "objectID": "in_progress/firstphdyear.html#if-you-could-wish-for-one-thing-to-make-the-phd-experience-even-better-what-would-it-be",
+    "href": "in_progress/firstphdyear.html#if-you-could-wish-for-one-thing-to-make-the-phd-experience-even-better-what-would-it-be",
+    "title": "Reflecting on a first PhD Year",
+    "section": "If you could wish for one thing to make the PhD experience even better, what would it be?",
+    "text": "If you could wish for one thing to make the PhD experience even better, what would it be?\n\nmore conferences?\nmore time with supervisor? (too shady???)"
   },
   {
     "objectID": "posts/whatsnew_SP.html",
