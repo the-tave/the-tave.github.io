@@ -1,6 +1,6 @@
 ---
 title: "Anni Tave Overlander"
-resources: CV_ATO24_full.pdf
+resources: CV_ATO25_full.pdf
 image: tavey.jpg
 about: 
   template: jolla
@@ -20,7 +20,7 @@ about:
       href: https://scholar.google.com/citations?hl=en&user=M_IN1BUAAAAJ
     - text: CV
       icon: bullseye
-      href: CV_ATO24_full.pdf
+      href: CV_ATO25_full.pdf
 ---
 
 Welcome to my corner of the internet! ✨
@@ -28,7 +28,7 @@ Welcome to my corner of the internet! ✨
 I am a Ph.D. candidate in Methods of Psychology and I am a bit of a statistics and R nerd.
 Feel free to contact me using the options below or learn more about my academic career.
 
-You can also learn more about my [Projects](/projects.qmd) - maybe some of it will help you or your students?
+You can also learn more about my [Projects](/projects.qmd) - maybe some will help you or your students?
 
 <!-- This is a Quarto website. -->
 
