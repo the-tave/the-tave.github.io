@@ -1,0 +1,14 @@
+---
+title: "Publications"
+bibliography: "my_pubs.bib"
+csl: "apa7_verbatim_journalname.csl"
+suppress-bibliography-title: true
+reference-entry-spacing: 2
+nocite: |
+    @*
+---
+
+<!-- biblio-title: "" -->
+
+::: {#refs}
+:::

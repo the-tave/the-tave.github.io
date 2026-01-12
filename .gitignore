@@ -6,3 +6,5 @@
 /.quarto/
 
 in_progress
+
+**/*.quarto_ipynb

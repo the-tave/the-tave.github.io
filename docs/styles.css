@@ -1,1 +1,15 @@
 /* css styles */
+
+/* Hide the bibliography section title
+#references > h2,
+#refs-title,
+h2#references,
+section#references > h2 {
+  display: none;
+}   */
+
+/* Add spacing between bibliography entries */
+#refs .csl-entry {
+  margin-bottom: 1em;
+}
+
