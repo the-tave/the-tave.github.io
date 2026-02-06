@@ -48,22 +48,19 @@ list(
 )
 ```
 
-::: {.card title="Yesterday's dropR downloads"}
-
 ```{r}
-#| title: "Yesterday's dropR downloads"
-#| expandable: false
+# #| title: "Yesterday's dropR downloads"
 # #| layout-ncol: 3 
+
+yday <- Sys.Date()-1
+
+cat("title=", "Yesterday's dropR downloads (", yday|> as.character(), "), compared to last week's maximum number of downloads")
 
 # Daily
 flexdashboard::gauge(yesterday, min = 0, max = lastweekdailymax, flexdashboard::gaugeSectors(  #symbol = '%',
   success = c(lastweekdailymax/2+1, lastweekdailymax), danger = c(0, lastweekdailymax/2) #warning = c(33, 66),
 ))
 ```
-
-Compared to the maximum number of downloads of the last week
-
-:::
 
 ## download history {height="60%"}
 
