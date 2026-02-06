@@ -1,0 +1,97 @@
+---
+title: "Dashboard"
+format: dashboard
+---
+
+```{r setup, include = F}
+# library(flexdashboard)
+library(ggplot2)
+
+knitr::opts_chunk$set(echo = F, warning = F)
+
+# Calculate all the CRAN download values
+downloads <- cranlogs::cran_downloads("dropR", from = "2015-01-01", to = Sys.Date())
+
+alltime <- downloads$count |> sum()
+
+lastmonth <- cranlogs::cran_downloads("dropR", from = Sys.Date()-30, to = Sys.Date())$count |> sum()
+
+yesterday <- cranlogs::cran_downloads("dropR", from = Sys.Date()-1, to = Sys.Date())$count |> sum()
+
+lastweekdailymax <- cranlogs::cran_downloads("dropR", from = Sys.Date()-7, to = Sys.Date())$count |> max()
+
+```
+
+# dropR
+
+## dropR downloads {height="40%"}
+
+```{r}
+#| content: valuebox
+#| title: "All time dropR downloads"
+
+list(
+  icon = "download",
+  color = "info",
+  value = alltime
+)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Last month's dropR downloads"
+
+list(
+  icon = "clock-history",
+  color = "info",
+  value = lastmonth
+)
+```
+
+::: {.card title="Yesterday's dropR downloads"}
+
+```{r}
+#| title: "Yesterday's dropR downloads"
+#| expandable: false
+# #| layout-ncol: 3 
+
+# Daily
+flexdashboard::gauge(yesterday, min = 0, max = lastweekdailymax, flexdashboard::gaugeSectors(  #symbol = '%',
+  success = c(lastweekdailymax/2+1, lastweekdailymax), danger = c(0, lastweekdailymax/2) #warning = c(33, 66),
+))
+```
+
+Compared to the maximum number of downloads of the last week
+
+:::
+
+## download history {height="60%"}
+
+```{r}
+#| fig-width: 18
+#| fig-height: 4
+#| out-width: "100%"
+
+useR <- as.Date("2024-07-09")
+
+brm <- as.Date("2025-07-18")
+
+library(unikn)
+
+
+ggplot(downloads, aes(x = date, y = count, color = count)) +
+  geom_line() +
+  geom_vline(xintercept = as.numeric(useR), color = "#2ebdc2", size = 1.2) +
+  geom_text(x = useR-170, y = 90, label = "Presented @ useR", color = "#2ebdc2") +
+  geom_vline(xintercept = as.numeric(brm), color = "#0d4c6b", size = 1.2) +
+  geom_text(x = brm-150, y = 90, label = "Published in BRM", color = "#0d4c6b") +
+  theme_minimal() +
+  labs(x = " ", y = "Downloads from CRAN") +
+  coord_cartesian(xlim = c(downloads$date[1], downloads$date[nrow(downloads)]), 
+                  expand = FALSE, clip = "off") +
+  # scale_color_gradientn(colors = unikn::pal_unikn_pair) +
+  rextor::scale_rextor(pal = 5) +
+  theme(legend.position = "none")
+
+
+```

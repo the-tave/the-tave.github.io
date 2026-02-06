@@ -11,6 +11,7 @@ website:
       - publications.qmd
       - projects.qmd
       - blog.qmd
+      - dashboard.qmd
 
 format:
   html:
