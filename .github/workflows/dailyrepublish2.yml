@@ -3,7 +3,7 @@ name: Daily render + deploy Quarto site
 on:
   schedule:
     # Runs daily at 09:15 UTC (cron is UTC; adjust as you like)
-    - cron: "15 9 * * *"
+    - cron: "45 9 * * *"
   workflow_dispatch:
 
 permissions:
@@ -33,16 +33,23 @@ jobs:
       #
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
-
-      - name: Install R dependencies (renv if present)
+        
+      - name: Restore R dependencies (renv)
         shell: bash
         run: |
-          R -q -e 'if (!requireNamespace("renv", quietly=TRUE)) install.packages("renv", repos="https://cloud.r-project.org")'
-          if [ -f renv.lock ]; then
-            R -q -e 'renv::restore(prompt = FALSE)'
-          else
-            echo "No renv.lock found; skipping renv restore."
-          fi
+          R -q -e 'install.packages("renv", repos="https://cloud.r-project.org")'
+          R -q -e 'renv::restore(prompt = FALSE)'
+
+
+      # - name: Install R dependencies (renv if present)
+      #   shell: bash
+      #   run: |
+      #     R -q -e 'if (!requireNamespace("renv", quietly=TRUE)) install.packages("renv", repos="https://cloud.r-project.org")'
+      #     if [ -f renv.lock ]; then
+      #       R -q -e 'renv::restore(prompt = FALSE)'
+      #     else
+      #       echo "No renv.lock found; skipping renv restore."
+      #     fi
 
       - name: Render site to docs/
         shell: bash
