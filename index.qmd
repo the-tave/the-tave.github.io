@@ -21,6 +21,7 @@ about:
     - text: CV
       icon: bullseye
       href: CV_ATO25_full.pdf
+
 ---
 
 Welcome to my corner of the internet! ✨
@@ -30,12 +31,10 @@ Feel free to contact me using the options below or learn more about my academic 
 
 You can also learn more about my [Projects](/projects.qmd) - maybe some will help you or your students?
 
-<!-- This is a Quarto website. -->
+<hr>
 
-<!-- It will be *my* website soon enough. Until then - stay put! -->
+```{r include = F}
+t <- Sys.time() |> round()
+```
 
-<!-- To learn more about Quarto websites visit <https://quarto.org/docs/websites>. -->
-
-<!-- ```{r} -->
-<!-- 1 + 1 -->
-<!-- ``` -->
+_Last updated on `{r} t`._

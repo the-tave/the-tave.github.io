@@ -1,0 +1,79 @@
+name: Daily render + deploy Quarto site
+
+on:
+  schedule:
+    # Runs daily at 09:15 UTC (cron is UTC; adjust as you like)
+    - cron: "15 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write   # needed to commit + push
+  pages: write      # needed to deploy to Pages
+  id-token: write   # needed by deploy-pages
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build-commit-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      # ---- OPTIONAL: If your site uses R (common for Quarto) ----
+      # Uncomment this whole block if you render with R code
+      #
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Install R dependencies (renv if present)
+        shell: bash
+        run: |
+          R -q -e 'if (!requireNamespace("renv", quietly=TRUE)) install.packages("renv", repos="https://cloud.r-project.org")'
+          if [ -f renv.lock ]; then
+            R -q -e 'renv::restore(prompt = FALSE)'
+          else
+            echo "No renv.lock found; skipping renv restore."
+          fi
+
+      - name: Render site to docs/
+        shell: bash
+        run: |
+          rm -rf docs
+          quarto render . --output-dir docs
+
+          # Optional: prevent GitHub Pages from running Jekyll
+          touch docs/.nojekyll
+
+      - name: Commit rendered site (docs/) back to main
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add -A docs
+
+          # Only commit if there are changes
+          if git diff --cached --quiet; then
+            echo "No changes in docs/ to commit."
+          else
+            git commit -m "Daily site render (Quarto)"
+            git push
+          fi
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
