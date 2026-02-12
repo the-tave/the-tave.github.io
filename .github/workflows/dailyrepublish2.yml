@@ -3,7 +3,7 @@ name: Daily render + deploy Quarto site
 on:
   schedule:
     # Runs daily at 09:15 UTC (cron is UTC; adjust as you like)
-    - cron: "45 9 * * *"
+    - cron: "45 5 * * *"
   workflow_dispatch:
 
 permissions:
