@@ -1,0 +1,10 @@
+---
+title: "Stats Picker"
+format: html
+---
+
+## https://the-tave.shinyapps.io/Stats-Picker
+
+Study Tool for learning statistics in a fun and accessible way. 
+It provides explanations as well as fun simulations and interactive tools (currently only in German). 
+It can even be installed as an app on mobile devices!

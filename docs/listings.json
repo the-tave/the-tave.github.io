@@ -5,5 +5,14 @@
       "/posts/whatsnew_SP.html",
       "/posts/first.html"
     ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects_pgs/PsychResearch.html",
+      "/projects_pgs/StatsPicker.html",
+      "/projects_pgs/dropR.html",
+      "/projects_pgs/rextor.html"
+    ]
   }
 ]

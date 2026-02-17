@@ -1,0 +1,9 @@
+---
+title: "rextor"
+format: html
+---
+
+## https://iscience-kn.github.io/rextor
+
+R package to help read in WEXTOR data into R. 
+Offers help with basic data preperation as well as styling graphical output and basic help from Rex right inside of R Studio!

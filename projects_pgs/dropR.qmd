@@ -1,0 +1,10 @@
+---
+title: "dropR"
+format: html
+---
+
+## https://iscience-kn.github.io/dropR
+
+R package to facilitate dropout analysis by condition. 
+Dropout is an important measure to determine participants' motivation and also validity of results. 
+This package & web app are to help make dropout analysis a routine step of data analysis in research.

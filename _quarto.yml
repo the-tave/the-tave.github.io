@@ -12,6 +12,12 @@ website:
       - projects.qmd
       - blog.qmd
       - dashboard.qmd
+      
+  page-footer: 
+    left: "© 2024-2026, Anni Tave Overlander" 
+    right: 
+      - icon: github
+        href: https://github.com/the-tave
 
 format:
   html:

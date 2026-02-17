@@ -1,0 +1,9 @@
+---
+title: "Psychological Research with R"
+format: html
+---
+
+## https://the-tave.github.io/psych_research_with_r
+
+An online book targetted at psychology students starting to learn R. 
+From installation to a finished, automated statistical report in R Markdown, it covers all the basics needed to really profit from R knowledge!
