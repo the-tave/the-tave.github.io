@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blog – The Tave</title>
+<title>Publications – The Tave</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,8 +50,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -70,65 +88,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -157,7 +117,7 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link active" href="./publications.html" aria-current="page"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
@@ -165,7 +125,7 @@ window.Quarto = {
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
@@ -191,7 +151,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">Publications</h1>
 </div>
 
 
@@ -208,71 +168,25 @@ window.Quarto = {
 </header>
 
 
+<!-- biblio-title: "" -->
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-kandleroverlanderetal2025" class="csl-entry" role="listitem">
+Kandler, C., Overlander, A. T., &amp; Bleidorn, W. (2025). Do core motives differ from broad personality trait dimensions in their changeability and susceptibility to life experiences? <em>European Journal of Personality</em>, <em>39</em>(6), 911–929. <a href="https://doi.org/10.1177/08902070251353549">https://doi.org/10.1177/08902070251353549</a>
+</div>
+<div id="ref-luhderoverlander2025" class="csl-entry" role="listitem">
+Lühder, A., &amp; Overlander, A. T. (2025). <em>Communication of the healthcare sector on climate change: <span>A</span> quantitative study with exploratory observations</em>. <a href="https://doi.org/10.5281/ZENODO.14873605">https://doi.org/10.5281/ZENODO.14873605</a>
+</div>
+<div id="ref-reipsoverlanderetal2025" class="csl-entry" role="listitem">
+Reips, U.-D., Overlander, A. T., &amp; Bannert, M. (2025). Dropout analysis: <span>A</span> method for data from <span class="nocase">Internet-based</span> research and <span class="nocase">dropR</span>, an <span class="nocase">R-based</span> web app and package to analyze and visualize dropout. <em>Behavior Research Methods</em>, <em>57</em>(8), 231. <a href="https://doi.org/10.3758/s13428-025-02730-2">https://doi.org/10.3758/s13428-025-02730-2</a>
+</div>
+<div id="ref-rothcaffieretal2025" class="csl-entry" role="listitem">
+Roth, L., Caffier, J., Reips, U.-D., Nuerk, H.-C., Overlander, A. T., &amp; Cipora, K. (2025). One and only <span>SNARC</span>? <span>Spatial-Numerical Associations</span> are not fully flexible and depend on both relative and absolute number magnitude. <em>Royal Society Open Science</em>, <em>12</em>(1), 241585. <a href="https://doi.org/10.1098/rsos.241585">https://doi.org/10.1098/rsos.241585</a>
+</div>
+</div>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="UHJvamVjdHM=" data-listing-date-sort="1736982000000" data-listing-file-modified-sort="1737023475053" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="269">
-<div class="thumbnail"><a href="./posts/whatsnew_SP.html" class="no-external">
-
-<img loading="lazy" src="./posts/Stats_Picker.png" class="thumbnail-image" alt="Stats Picker Logo.">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/whatsnew_SP.html" class="no-external">What’s New with Stats Picker</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/whatsnew_SP.html" class="no-external">One of the first projects that I started during my Ph.D.&nbsp;is now shining in a new light!</a>
-</div>
-<div class="delink listing-description"><a href="./posts/whatsnew_SP.html" class="no-external">
-</a><p><a href="./posts/whatsnew_SP.html" class="no-external">I’m excited to announce the latest update to the Statistik-Picker app, now featuring complete English translations and enhanced mobile functionality! Check it out under </a><a href="https://the-tave.shinyapps.io/Statistik-Picker">the-tave.shinyapps.io/Statistik-Picker</a></p>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/whatsnew_SP.html" class="no-external">
-<div class="listing-date">
-Jan 16, 2025
-</div>
-<div class="listing-author">
-Anni Tave
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="UmFuZG9t" data-listing-date-sort="1729116000000" data-listing-file-modified-sort="1729162103000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="14">
-<div class="thumbnail"><a href="./posts/first.html" class="no-external">
-
-<img loading="lazy" src="./posts/mathlabala_2.png" class="thumbnail-image" alt="Purple and red mandala created in Matlab.">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/first.html" class="no-external">First Blog Post</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/first.html" class="no-external">Learn how to use quarto for website building and blog crafting</a>
-</div>
-<div class="delink listing-description"><a href="./posts/first.html" class="no-external">
-This is the very first Blogpost I will write on my own website!
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/first.html" class="no-external">
-<div class="listing-date">
-Oct 17, 2024
-</div>
-<div class="listing-author">
-Anni Tave
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
