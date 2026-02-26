@@ -14,11 +14,11 @@ downloads <- cranlogs::cran_downloads("dropR", from = "2015-01-01", to = Sys.Dat
 
 alltime <- downloads$count |> sum()
 
-lastmonth <- cranlogs::cran_downloads("dropR", from = Sys.Date()-30, to = Sys.Date())$count |> sum()
+lastmonth <- cranlogs::cran_downloads("dropR", when = "last-month")$count |> sum()
 
-yesterday <- cranlogs::cran_downloads("dropR", from = Sys.Date()-1, to = Sys.Date())$count |> sum()
+yesterday <- cranlogs::cran_downloads("dropR", when = "last-day")$count
 
-lastweekdailymax <- cranlogs::cran_downloads("dropR", from = Sys.Date()-7, to = Sys.Date())$count |> max()
+lastweekdailymax <- cranlogs::cran_downloads("dropR", when = "last-week")$count |> max()
 
 ```
 
@@ -52,9 +52,9 @@ list(
 # #| title: "Yesterday's dropR downloads"
 # #| layout-ncol: 3 
 
-yday <- Sys.Date()-1
+yday <- Sys.Date()-2
 
-cat("title=", "Yesterday's dropR downloads (", yday|> as.character(), "), compared to last week's maximum number of downloads")
+cat("title=", "Last day's dropR downloads (", yday|> as.character(), "), compared to last week's maximum number of downloads")
 
 # Daily
 flexdashboard::gauge(yesterday, min = 0, max = lastweekdailymax, flexdashboard::gaugeSectors(  #symbol = '%',
