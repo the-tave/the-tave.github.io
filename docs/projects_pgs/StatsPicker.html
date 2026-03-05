@@ -128,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#httpsthe-tave.shinyapps.iostats-picker" id="toc-httpsthe-tave.shinyapps.iostats-picker" class="nav-link active" data-scroll-target="#httpsthe-tave.shinyapps.iostats-picker">https://the-tave.shinyapps.io/Stats-Picker</a></li>
+  <li><a href="#stats-picker-shiny-app" id="toc-stats-picker-shiny-app" class="nav-link active" data-scroll-target="#stats-picker-shiny-app">Stats Picker Shiny App</a></li>
   </ul>
 </nav>
     </div>
@@ -154,9 +154,18 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="httpsthe-tave.shinyapps.iostats-picker" class="level2">
-<h2 class="anchored" data-anchor-id="httpsthe-tave.shinyapps.iostats-picker">https://the-tave.shinyapps.io/Stats-Picker</h2>
-<p>Study Tool for learning statistics in a fun and accessible way. It provides explanations as well as fun simulations and interactive tools (currently only in German). It can even be installed as an app on mobile devices!</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="./img/SP.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="stats-picker-shiny-app" class="level2">
+<h2 class="anchored" data-anchor-id="stats-picker-shiny-app"><a href="https://the-tave.shinyapps.io/Stats-Picker">Stats Picker Shiny App</a></h2>
+<p>Stats Picker is a Study Tool for learning statistics in a fun and accessible way. It provides explanations as well as fun simulations and interactive tools (available in English and German). It also offers a promting guide for improved AI prompts to get to the desired results and explanations more efficiently. It can even be installed as an app on mobile devices!</p>
 
 
 </section>
@@ -249,6 +258,13 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

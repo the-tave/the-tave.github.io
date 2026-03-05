@@ -1,10 +1,21 @@
 ---
 title: "Psychological Research with R"
 image: "./img/psychresearchR.png"
-format: html
+format: 
+  html:
+    link-external-icon: true
+    link-external-newwindow: true
 ---
 
-## https://the-tave.github.io/psych_research_with_r
+```{r echo = F}
+knitr::include_graphics("./img/psychresearchR.png")
+```
 
-An online book targetted at psychology students starting to learn R. 
+
+## [Online Book](https://the-tave.github.io/psych_research_with_r)
+
+This is an [online book](https://the-tave.github.io/psych_research_with_r) targeted at psychology students starting to learn R. 
 From installation to a finished, automated statistical report in R Markdown, it covers all the basics needed to really profit from R knowledge!
+
+It is based on a university course and also includes some exercises.
+As of March 2026, it is still a work in progress.

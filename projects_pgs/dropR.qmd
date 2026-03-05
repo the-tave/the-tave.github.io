@@ -1,11 +1,26 @@
 ---
 title: "dropR"
 image: "./img/dropR.png"
-format: html
+format: 
+  html:
+    link-external-icon: true
+    link-external-newwindow: true
 ---
 
-## https://iscience-kn.github.io/dropR
+```{r echo = F}
+knitr::include_graphics("./img/dropR.png")
+```
 
-R package to facilitate dropout analysis by condition. 
+## Double Trouble
+
+This package & web app are here to help make dropout analysis a routine step of data analysis in research.
+
+### [dropR package](https://cran.r-project.org/web/packages/dropR/index.html)
+
+DropR is an R package to facilitate dropout analysis by condition. 
 Dropout is an important measure to determine participants' motivation and also validity of results. 
-This package & web app are to help make dropout analysis a routine step of data analysis in research.
+
+### [dropR Shiny App](https://iscience-kn.shinyapps.io/dropR/)
+
+Here you can get familiar with the principles of dropout analysis and try it out using your own data or a demo dataset.
+The R package is more customizable but the App already lets you conduct publication-worthy dropout analysis including survival statistics and visualizations! 

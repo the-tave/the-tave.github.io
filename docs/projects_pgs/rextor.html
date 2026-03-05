@@ -128,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#httpsiscience-kn.github.iorextor" id="toc-httpsiscience-kn.github.iorextor" class="nav-link active" data-scroll-target="#httpsiscience-kn.github.iorextor">https://iscience-kn.github.io/rextor</a></li>
+  <li><a href="#rextor-package" id="toc-rextor-package" class="nav-link active" data-scroll-target="#rextor-package">rextor package</a></li>
   </ul>
 </nav>
     </div>
@@ -154,9 +154,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="httpsiscience-kn.github.iorextor" class="level2">
-<h2 class="anchored" data-anchor-id="httpsiscience-kn.github.iorextor">https://iscience-kn.github.io/rextor</h2>
-<p>R package to help read in WEXTOR data into R. Offers help with basic data preperation as well as styling graphical output and basic help from Rex right inside of R Studio!</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="./img/rextor.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="rextor-package" class="level2">
+<h2 class="anchored" data-anchor-id="rextor-package"><a href="https://iscience-kn.github.io/rextor">rextor package</a></h2>
+<p>Rextor is an R package to help read in WEXTOR data into R. It offers help with basic data preparation as well as styling graphical output and basic help from Rex right inside of R Studio!</p>
+<p>Even without using WEXTOR, rextor is a great package for styling plots, e.g.&nbsp;with a white-on-black theme perfect for dark theme quarto presentations.</p>
 
 
 </section>
@@ -249,6 +259,13 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

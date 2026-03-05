@@ -128,7 +128,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#httpsiscience-kn.github.iodropr" id="toc-httpsiscience-kn.github.iodropr" class="nav-link active" data-scroll-target="#httpsiscience-kn.github.iodropr">https://iscience-kn.github.io/dropR</a></li>
+  <li><a href="#double-trouble" id="toc-double-trouble" class="nav-link active" data-scroll-target="#double-trouble">Double Trouble</a>
+  <ul class="collapse">
+  <li><a href="#dropr-package" id="toc-dropr-package" class="nav-link" data-scroll-target="#dropr-package">dropR package</a></li>
+  <li><a href="#dropr-shiny-app" id="toc-dropr-shiny-app" class="nav-link" data-scroll-target="#dropr-shiny-app">dropR Shiny App</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -154,11 +158,28 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="httpsiscience-kn.github.iodropr" class="level2">
-<h2 class="anchored" data-anchor-id="httpsiscience-kn.github.iodropr">https://iscience-kn.github.io/dropR</h2>
-<p>R package to facilitate dropout analysis by condition. Dropout is an important measure to determine participants’ motivation and also validity of results. This package &amp; web app are to help make dropout analysis a routine step of data analysis in research.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="./img/dropR.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="double-trouble" class="level2">
+<h2 class="anchored" data-anchor-id="double-trouble">Double Trouble</h2>
+<p>This package &amp; web app are here to help make dropout analysis a routine step of data analysis in research.</p>
+<section id="dropr-package" class="level3">
+<h3 class="anchored" data-anchor-id="dropr-package"><a href="https://cran.r-project.org/web/packages/dropR/index.html">dropR package</a></h3>
+<p>DropR is an R package to facilitate dropout analysis by condition. Dropout is an important measure to determine participants’ motivation and also validity of results.</p>
+</section>
+<section id="dropr-shiny-app" class="level3">
+<h3 class="anchored" data-anchor-id="dropr-shiny-app"><a href="https://iscience-kn.shinyapps.io/dropR/">dropR Shiny App</a></h3>
+<p>Here you can get familiar with the principles of dropout analysis and try it out using your own data or a demo dataset. The R package is more customizable but the App already lets you conduct publication-worthy dropout analysis including survival statistics and visualizations!</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -249,6 +270,13 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

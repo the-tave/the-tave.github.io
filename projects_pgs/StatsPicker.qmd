@@ -1,11 +1,19 @@
 ---
 title: "Stats Picker"
 image: "./img/SP.png"
-format: html
+format: 
+  html:
+    link-external-icon: true
+    link-external-newwindow: true
 ---
 
-## https://the-tave.shinyapps.io/Stats-Picker
+```{r echo = F}
+knitr::include_graphics("./img/SP.png")
+```
 
-Study Tool for learning statistics in a fun and accessible way. 
-It provides explanations as well as fun simulations and interactive tools (currently only in German). 
+## [Stats Picker Shiny App](https://the-tave.shinyapps.io/Stats-Picker)
+
+Stats Picker is a Study Tool for learning statistics in a fun and accessible way. 
+It provides explanations as well as fun simulations and interactive tools (available in English and German). 
+It also offers a promting guide for improved AI prompts to get to the desired results and explanations more efficiently.
 It can even be installed as an app on mobile devices!

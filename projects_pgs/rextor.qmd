@@ -1,10 +1,19 @@
 ---
 title: "rextor"
 image: "./img/rextor.png"
-format: html
+format: 
+  html:
+    link-external-icon: true
+    link-external-newwindow: true
 ---
 
-## https://iscience-kn.github.io/rextor
+```{r echo = F}
+knitr::include_graphics("./img/rextor.png")
+```
 
-R package to help read in WEXTOR data into R. 
-Offers help with basic data preperation as well as styling graphical output and basic help from Rex right inside of R Studio!
+## [rextor package](https://iscience-kn.github.io/rextor)
+
+Rextor is an R package to help read in WEXTOR data into R. 
+It offers help with basic data preparation as well as styling graphical output and basic help from Rex right inside of R Studio!
+
+Even without using WEXTOR, rextor is a great package for styling plots, e.g. with a white-on-black theme perfect for dark theme quarto presentations.
