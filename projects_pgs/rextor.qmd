@@ -1,5 +1,6 @@
 ---
 title: "rextor"
+image: "./img/rextor.png"
 format: html
 ---
 

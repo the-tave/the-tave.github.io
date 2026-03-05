@@ -1,5 +1,6 @@
 ---
 title: "Stats Picker"
+image: "./img/SP.png"
 format: html
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Psychological Research with R"
+image: "./img/psychresearchR.png"
 format: html
 ---
 
