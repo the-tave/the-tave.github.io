@@ -1,5 +1,6 @@
 ---
 title: "dropR"
+image: "./img/dropR_logo.png"
 format: html
 ---
 
