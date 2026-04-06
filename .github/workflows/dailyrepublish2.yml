@@ -42,6 +42,7 @@ jobs:
           R -q -e 'install.packages(c("renv", "remotes"), repos="https://cloud.r-project.org")'
           R -q -e 'remotes::install_github("iscience-kn/rextor")'
           R -q -e 'options(renv.verbose = TRUE); renv::restore(prompt = FALSE, exclude = "rextor")'
+          R -q -e 'install.packages(c("knitr", "rmarkdown"), repos="https://cloud.r-project.org")'
 
       # - name: Install R dependencies (renv if present)
       #   shell: bash
@@ -55,8 +56,12 @@ jobs:
 
       - name: Render site to docs/
         shell: bash
+        env:
+          GITHUB_PAT: ${{ github.token }}
+          RENV_CONFIG_AUTOLOADER_ENABLED: "FALSE"
         run: |
           rm -rf docs
+          R -q -e 'options(renv.consent = TRUE); library(renv); renv::load()'
           quarto render . --output-dir docs
 
           # Optional: prevent GitHub Pages from running Jekyll
