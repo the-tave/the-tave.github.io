@@ -37,10 +37,10 @@ jobs:
       - name: Restore R dependencies (renv)
         shell: bash
         env:
-            RENV_CONFIG_AUTOLOADER_ENABLED: "FALSE"
+          RENV_CONFIG_AUTOLOADER_ENABLED: "FALSE"
         run: |
           R -q -e 'install.packages("renv", repos="https://cloud.r-project.org")'
-          R -q -e 'renv::restore(prompt = FALSE)'
+          R -q -e 'options(renv.verbose = TRUE); renv::restore(prompt = FALSE)'
 
 
       # - name: Install R dependencies (renv if present)
