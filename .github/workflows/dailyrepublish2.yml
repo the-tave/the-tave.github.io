@@ -45,7 +45,7 @@ jobs:
           RENV_CONFIG_AUTOLOADER_ENABLED: "FALSE"
         run: |
           R -q -e 'install.packages(c("renv", "remotes"), repos="https://cloud.r-project.org")'
-          R -q -e 'install.packages(c("knitr", "rmarkdown"), repos="https://cloud.r-project.org")'
+          R -q -e 'install.packages(c("knitr", "rmarkdown", "ggplot2"), repos="https://cloud.r-project.org")'
       
       # Removed rextor package for now    
       # R -q -e 'remotes::install_github("iscience-kn/rextor")'
