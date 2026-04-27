@@ -46,6 +46,14 @@ jobs:
         run: |
           R -q -e 'install.packages(c("renv", "remotes"), repos="https://cloud.r-project.org")'
           R -q -e 'install.packages(c("knitr", "rmarkdown", "ggplot2"), repos="https://cloud.r-project.org")'
+          
+          R -q -e 'if (!requireNamespace("renv", quietly=TRUE)) install.packages("renv", repos="https://cloud.r-project.org")'
+          if [ -f renv.lock ]; then
+            R -q -e 'renv::restore(prompt = FALSE)'
+          else
+            echo "No renv.lock found; skipping renv restore."
+          fi
+        # Not sure if the 2. block works but I don't want to load and install all packages by hand, which it seems to be doing currently
       
       # Removed rextor package for now    
       # R -q -e 'remotes::install_github("iscience-kn/rextor")'
