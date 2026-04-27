@@ -73,7 +73,7 @@ useR <- as.Date("2024-07-09")
 
 brm <- as.Date("2025-07-18")
 
-library(unikn)
+# library(unikn)
 
 
 ggplot(downloads, aes(x = date, y = count, color = count)) +
@@ -86,8 +86,8 @@ ggplot(downloads, aes(x = date, y = count, color = count)) +
   labs(x = " ", y = "Downloads from CRAN") +
   coord_cartesian(xlim = c(downloads$date[1], downloads$date[nrow(downloads)]), 
                   expand = FALSE, clip = "off") +
-  # scale_color_gradientn(colors = unikn::pal_unikn_pair) +
-  rextor::scale_rextor(pal = 5) +
+  # rextor::scale_rextor(pal = 5) +
+  scale_color_continuous(palette = c("#750400", "#f7ad00", "#58015e", "#0006b8", "#00d9ce"))+
   theme(legend.position = "none")
 
 
