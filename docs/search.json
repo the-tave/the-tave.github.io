@@ -21,6 +21,13 @@
     "text": "Double Trouble\nThis package & web app are here to help make dropout analysis a routine step of data analysis in research.\n\ndropR package\nDropR is an R package to facilitate dropout analysis by condition. Dropout is an important measure to determine participants’ motivation and also validity of results.\n\n\ndropR Shiny App\nHere you can get familiar with the principles of dropout analysis and try it out using your own data or a demo dataset. The R package is more customizable but the App already lets you conduct publication-worthy dropout analysis including survival statistics and visualizations!"
   },
   {
+    "objectID": "projects_pgs/dropR.html#open-science-spotlight-analyzing-dropout-in-online-studies",
+    "href": "projects_pgs/dropR.html#open-science-spotlight-analyzing-dropout-in-online-studies",
+    "title": "dropR",
+    "section": "Open Science Spotlight: Analyzing dropout in online studies",
+    "text": "Open Science Spotlight: Analyzing dropout in online studies\nAfter the paper on dropR that came out in 2025 (see Publications), the University of Konstanz Open Science team became aware of dropR and wrote a short “Spotlight” on it. It highlights in accessible and mostly lay-friendly terms what dropR is and which advantages it brings. You can read the Spotlight here: www.campus.uni-konstanz.de/en/analyzing-dropout-in-online-studies"
+  },
+  {
     "objectID": "posts/whatsnew_SP.html",
     "href": "posts/whatsnew_SP.html",
     "title": "What’s New with Stats Picker",
@@ -109,7 +116,7 @@
     "href": "index.html",
     "title": "Anni Tave Overlander",
     "section": "",
-    "text": "Welcome to my corner of the internet! ✨\nI am a Ph.D. candidate in Methods of Psychology and I am a bit of a statistics and R nerd. Feel free to contact me using the options below or learn more about my academic career.\nYou can also learn more about my Projects - maybe some will help you or your students?\n\nLast updated on 2026-04-27 13:06:21."
+    "text": "Welcome to my corner of the internet! ✨\nI am a Ph.D. candidate in Methods of Psychology and I am a bit of a statistics and R nerd. Feel free to contact me using the options below or learn more about my academic career.\nYou can also learn more about my Projects - maybe some will help you or your students?\n\nLast updated on 2026-05-13 16:01:53."
   },
   {
     "objectID": "posts/first.html",

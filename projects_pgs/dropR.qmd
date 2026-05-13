@@ -24,3 +24,11 @@ Dropout is an important measure to determine participants' motivation and also v
 
 Here you can get familiar with the principles of dropout analysis and try it out using your own data or a demo dataset.
 The R package is more customizable but the App already lets you conduct publication-worthy dropout analysis including survival statistics and visualizations! 
+
+
+## Open Science Spotlight: Analyzing dropout in online studies
+
+After the paper on dropR that came out in 2025 (see [Publications](/publications.html)), the University of Konstanz Open Science team became aware of dropR and wrote a short "Spotlight" on it.
+It highlights in accessible and mostly lay-friendly terms what dropR is and which advantages it brings.
+You can read the Spotlight here: [www.campus.uni-konstanz.de/en/analyzing-dropout-in-online-studies](https://www.campus.uni-konstanz.de/en/analyzing-dropout-in-online-studies)
+
