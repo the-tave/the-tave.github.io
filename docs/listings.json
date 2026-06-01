@@ -2,7 +2,10 @@
   {
     "listing": "/blog.html",
     "items": [
+<<<<<<< HEAD
       "/posts/rextorCRAN.html",
+=======
+>>>>>>> 9bd6ccede7a1b3f68a5fb74b85a44b501565fbab
       "/posts/whatsnew_SP.html",
       "/posts/first.html"
     ]
