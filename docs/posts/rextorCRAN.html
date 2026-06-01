@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Anni Tave">
+<meta name="dcterms.date" content="2026-06-01">
+<meta name="description" content="The rextor package was initially designed to assist in reading WEXTOR data into R. It has since turned into a more general data preparation package that also features a scale and theme for data visualization!">
 
-<title>Projects – The Tave</title>
+<title>Starting Summer with a Rawr – The Tave</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,25 +29,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d390f6b1bb233dafbd59a397b5af9ca7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d390f6b1bb233dafbd59a397b5af9ca7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,67 +73,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -142,7 +85,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">The Tave</span>
     </a>
   </div>
@@ -153,23 +96,23 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./dashboard.html"> 
+    <a class="nav-link" href="../dashboard.html"> 
 <span class="menu-text">Dashboard</span></a>
   </li>  
 </ul>
@@ -183,22 +126,51 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#rextor-on-cran" id="toc-rextor-on-cran" class="nav-link active" data-scroll-target="#rextor-on-cran">rextor on CRAN</a></li>
+  <li><a href="#more-on-rextor" id="toc-more-on-rextor" class="nav-link" data-scroll-target="#more-on-rextor">More on rextor</a></li>
+  <li><a href="#feedback-and-support" id="toc-feedback-and-support" class="nav-link" data-scroll-target="#feedback-and-support">Feedback and Support</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projects</h1>
-</div>
+<h1 class="title">Starting Summer with a Rawr</h1>
+<p class="subtitle lead">My very own <code>rextor</code> package is officially on CRAN!</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Projects</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    <p>The rextor package was initially designed to assist in reading <a href="https://wextor.eu/wextor/en/">WEXTOR</a> data into R. It has since turned into a more general data preparation package that also features a scale and theme for data visualization!</p>
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Anni Tave </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 1, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -208,132 +180,24 @@ window.Quarto = {
 </header>
 
 
-<p>Here you can find all the projects that I am currently working on. Most of them are R-based and my focus lies in making solid statistics and psychological methods available to everyone. If you happen to find a mistake somewhere, have ideas for further features or just want to gush about the beauty of Open Code don’t hesitate to contact me!</p>
-<!-- # ```{r echo = F} -->
-<!-- # library(tibble) -->
-<!-- # library(kableExtra) -->
-<!-- #  -->
-<!-- # tribble( -->
-<!-- #    ~Project, ~Description, -->
-<!-- #   text_spec("Statistik Picker", link = "https://the-tave.shinyapps.io/Statistik-Picker"), "Study Tool for learning statistics in a fun and accessible way. It provides explanations as well as fun simulations and interactive tools (currently only in German). It can even be installed as an app on mobile devices!", -->
-<!-- #    -->
-<!-- #   text_spec("Psychological Research with R", link = "https://the-tave.github.io/psych_research_with_r"), "An online book targetted at psychology students starting to learn R. From installation to a finished, automated statistical report in R Markdown, it covers all the basics needed to really profit from R knowledge!", -->
-<!-- #    -->
-<!-- #   text_spec("dropR package", link = "https://iscience-kn.github.io/dropR"), "R package to facilitate dropout analysis by condition. Dropout is an important measure to determine participants' motivation and also validity of results. This package & web app are to help make dropout analysis a routine step of data analysis in research.", -->
-<!-- #    -->
-<!-- #   text_spec("rextor package", link = "https://iscience-kn.github.io/rextor"), "R package to help read in WEXTOR data into R. Offers help with basic data preperation as well as styling graphical output and basic help from Rex right inside of R Studio!" -->
-<!-- # ) %>%  -->
-<!-- #   # vitae::brief_entries( -->
-<!-- #   #   Desc, -->
-<!-- #   #   Project -->
-<!-- #   # ) -->
-<!-- #   # dplyr::mutate(model = cell_spec(row.names(.), "html", link = Link)) %>% -->
-<!-- #   kable("html", escape = FALSE) |> -->
-<!-- #   column_spec(1, width = "15em") |>  -->
-<!-- #   row_spec(1, color = "#e85620") |>  -->
-<!-- #   row_spec(2, color = "#800080") |>  -->
-<!-- #   row_spec(3, color = "#3c8dbc") |>  -->
-<!-- #   row_spec(4, color =  "#44aa47") |>  -->
-<!-- #   # kbl()%>% -->
-<!-- #   kable_minimal() -->
-<!-- # ``` -->
-<!-- About this site -->
-<!-- ```{r} -->
-<!-- 1 + 1 -->
-<!-- ``` -->
+<section id="rextor-on-cran" class="level2">
+<h2 class="anchored" data-anchor-id="rextor-on-cran">rextor on CRAN</h2>
+<p>You can find more information on <code>rextor</code> on the official CRAN page: <a href="https://doi.org/10.32614/CRAN.package.rextor">doi.org/10.32614/CRAN.package.rextor</a>. Version 1.1.0 was successfully published on May 21st 2026 after version 1.0.0 turned out to need a bit more love still.</p>
+<p>This is the second package that I’m actively maintaining on CRAN, but the first that I designed myself completely from scratch. Even though I knew what was coming when I decided to try and put it up on CRAN because I already went through the process with <code>dropR</code> (<a href="https://doi.org/10.32614/CRAN.package.dropR">doi.org/10.32614/CRAN.package.dropR</a>), I was still pretty nervous. Which is a good sign and a good thing because in the weeks leading up to the official publication, <code>rextor</code> improved tremendously as a package, making it not only way better documented but also a lot more useful and usable - even for me.</p>
+</section>
+<section id="more-on-rextor" class="level2">
+<h2 class="anchored" data-anchor-id="more-on-rextor">More on rextor</h2>
+<p>For more information on <code>rextor</code> as a package, all available functions and an example of how to use them I highly recommend you check out the documentation on github pages: <a href="https://iscience-kn.github.io/rextor/">iscience-kn.github.io/rextor/</a>. You can also admire the hand-drawn logo of Rex, the happy little dinosaur. 🦖 I’ll be making hex-stickers soon so if you want some of your own, let me know! :)</p>
+</section>
+<section id="feedback-and-support" class="level2">
+<h2 class="anchored" data-anchor-id="feedback-and-support">Feedback and Support</h2>
+<p>As always, I am very open to receiving feedback on my work as I hope to make workflows easier. If there are any features that you would love see in this package, hit me up! Send me an e-mail at <a href="mailto:overlander@uni.kn">overlander@uni.kn</a> or open a GitHub issue at <a href="https://github.com/iscience-kn/rextor/issues">github.com/iscience-kn/rextor/issues</a></p>
+<p>Stay tuned for more updates and features aimed at improving your statistical analysis experience!</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1772703457225" data-listing-reading-time-sort="1" data-listing-word-count-sort="60">
-<a href="./projects_pgs/PsychResearch.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects_pgs/img/psychresearchR.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Psychological Research with R
-</h5>
-<div class="card-text listing-description delink">
-This is an online book targeted at psychology students starting to learn R. From installation to a finished, automated statistical report in R Markdown, it covers all the…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1772704962548" data-listing-reading-time-sort="1" data-listing-word-count-sort="64">
-<a href="./projects_pgs/StatsPicker.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects_pgs/img/SP.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Stats Picker
-</h5>
-<div class="card-text listing-description delink">
-Stats Picker is a Study Tool for learning statistics in a fun and accessible way. It provides explanations as well as fun simulations and interactive tools (available in…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1778680827229" data-listing-reading-time-sort="1" data-listing-word-count-sort="154">
-<a href="./projects_pgs/dropR.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects_pgs/img/dropR.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-dropR
-</h5>
-<div class="card-text listing-description delink">
-This package &amp; web app are here to help make dropout analysis a routine step of data analysis in research.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1772704330569" data-listing-reading-time-sort="1" data-listing-word-count-sort="61">
-<a href="./projects_pgs/rextor.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects_pgs/img/rextor.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-rextor
-</h5>
-<div class="card-text listing-description delink">
-Rextor is an R package to help read in WEXTOR data into R. It offers help with basic data preparation as well as styling graphical output and basic help from Rex right…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

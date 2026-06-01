@@ -1,0 +1,36 @@
+---
+title: "Starting Summer with a Rawr"
+subtitle: My very own `rextor` package is officially on CRAN!
+description: |
+    The rextor package was initially designed to assist in reading [WEXTOR](https://wextor.eu/wextor/en/) data into R. It has since turned into a more general data preparation package that also features a scale and theme for data visualization!
+categories:
+  - Projects
+author: Anni Tave
+date: 06/01/2026
+image: rextor.png
+image-alt: "rextor hex-logo."
+---
+
+## rextor on CRAN
+
+You can find more information on `rextor` on the official CRAN page: [doi.org/10.32614/CRAN.package.rextor](https://doi.org/10.32614/CRAN.package.rextor).
+Version 1.1.0 was successfully published on May 21st 2026 after version 1.0.0 turned out to need a bit more love still.
+
+This is the second package that I'm actively maintaining on CRAN, but the first that I designed myself completely from scratch. 
+Even though I knew what was coming when I decided to try and put it up on CRAN because I already went through the process with `dropR` ([doi.org/10.32614/CRAN.package.dropR](https://doi.org/10.32614/CRAN.package.dropR)), I was still pretty nervous.
+Which is a good sign and a good thing because in the weeks leading up to the official publication, `rextor` improved tremendously as a package, making it not only way better documented but also a lot more useful and usable - even for me.
+
+## More on rextor
+
+For more information on `rextor` as a package, all available functions and an example of how to use them I highly recommend you check out the documentation on github pages: [iscience-kn.github.io/rextor/](https://iscience-kn.github.io/rextor/).
+You can also admire the hand-drawn logo of Rex, the happy little dinosaur. 🦖
+I'll be making hex-stickers soon so if you want some of your own, let me know! :)
+
+
+## Feedback and Support
+
+As always, I am very open to receiving feedback on my work as I hope to make workflows easier.
+If there are any features that you would love see in this package, hit me up! 
+Send me an e-mail at [overlander@uni.kn](mailto:overlander@uni.kn) or open a GitHub issue at [github.com/iscience-kn/rextor/issues](https://github.com/iscience-kn/rextor/issues)
+
+Stay tuned for more updates and features aimed at improving your statistical analysis experience!

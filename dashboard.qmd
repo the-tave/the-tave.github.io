@@ -6,10 +6,13 @@ format: dashboard
 ```{r setup, include = F}
 # library(flexdashboard)
 library(ggplot2)
+library(rextor)
 
 knitr::opts_chunk$set(echo = F, warning = F)
 
 # Calculate all the CRAN download values
+
+## dropR
 downloads <- cranlogs::cran_downloads("dropR", from = "2015-01-01", to = Sys.Date())
 
 alltime <- downloads$count |> sum()
@@ -20,6 +23,13 @@ yesterday <- cranlogs::cran_downloads("dropR", when = "last-day")$count
 
 lastweekdailymax <- cranlogs::cran_downloads("dropR", when = "last-week")$count |> max()
 
+## rextor
+
+downloadsrextor <- cranlogs::cran_downloads("rextor", from = "2026-05-20", to = Sys.Date())
+alltimerextor <- downloadsrextor$count |> sum()
+
+maxnumrextor <- max(downloadsrextor$count)
+datemaxnumrextor <- downloadsrextor$date[downloadsrextor$count == max(downloadsrextor$count)]
 ```
 
 # dropR
@@ -91,4 +101,48 @@ ggplot(downloads, aes(x = date, y = count, color = count)) +
   theme(legend.position = "none")
 
 
+```
+
+# rextor
+
+## text and downloads {height="40%"}
+
+:::{.card title="rextor package"}
+
+`rextor` was first released to CRAN on May 21st 2026.
+Read more about it under [Blog](./blog.html) or on the official [CRAN page](https://doi.org/10.32614/CRAN.package.rextor).
+
+
+Since then, the maximum number of daily downloads was `r maxnumrextor` on `r datemaxnumrextor`.
+
+
+:::
+
+```{r}
+#| content: valuebox
+#| title: "All time rextor downloads"
+
+list(
+  icon = "download",
+  color = "#a3d88a",
+  value = alltimerextor
+)
+```
+
+
+## download history {height="60%"}
+
+```{r}
+#| fig-width: 18
+#| fig-height: 4
+#| out-width: "100%"
+
+ggplot(downloadsrextor, aes(x = date, y = count, color = count)) +
+  geom_line() +
+  theme_minimal() +
+  labs(x = " ", y = "Downloads from CRAN") +
+  coord_cartesian(xlim = c(downloadsrextor$date[1], downloadsrextor$date[nrow(downloadsrextor)]+3), 
+                  expand = FALSE, clip = "off") +
+  scale_rextor(pal = 5) +
+  theme(legend.position = "none")
 ```
