@@ -1,6 +1,6 @@
 ---
 title: "Anni Tave Overlander"
-resources: CV_ATO25_full.pdf
+resources: CV_ATO26_full.pdf
 image: tavey.jpg
 about: 
   template: jolla
@@ -20,7 +20,7 @@ about:
       href: https://scholar.google.com/citations?hl=en&user=M_IN1BUAAAAJ
     - text: CV
       icon: bullseye
-      href: CV_ATO25_full.pdf
+      href: CV_ATO26_full.pdf
 
 ---
 
