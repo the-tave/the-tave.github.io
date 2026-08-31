@@ -1,0 +1,24 @@
+---
+title: "Cornell: Lab Visit Diary"
+subtitle: One month at the Ithaca Ivy League
+description: |
+  When I met Dr. Reyna at a conference in 2024, I knew this was a woman you could learn a thing or two from. In September 2026, I get to spend one month at her lab at Cornell. This will be my little professional diary about my experience here!
+categories:
+  - Research
+  - Projects
+  - Travel
+author: Anni Tave
+date: 08/31/2026
+# image: mathlabala_2.png
+# image-alt: "Purple and red mandala created in Matlab."
+---
+
+## Aug 31st: Arrival
+
+Luckily, my skill to dribble jet lag when flying to the US is strong and I was able to sleep through my first night after arriving in Ithaca on Sunday.
+I was greeted by different members of the Human Ecology Lab at Cornell and everyone was just lovely.
+Allison gave me a tour through the Martha Van Rensselaer building, impressing me with how knowledgeable she is about this university. 
+
+This afternoon I will introduce myself and my work to the lab and also a class of students, which I'm very excited about.
+Hopefully, the tiredness-crash will happen later in the evening!
+

@@ -2,23 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Dashboard – The Tave</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
+code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: 1.5em;}
-div.column{flex: auto;}
-@media screen {
-div.columns{gap: min(4vw, 1.5em);}
-div.column{overflow-x: auto;}
-}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -38,18 +32,19 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6909a95a6fd25711f18b6f9e26987b4b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-6909a95a6fd25711f18b6f9e26987b4b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-6909a95a6fd25711f18b6f9e26987b4b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-edea2f37dd155b60faf08ba51f9639de.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-edea2f37dd155b60faf08ba51f9639de.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-edea2f37dd155b60faf08ba51f9639de.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-dashboard/quarto-dashboard.js"></script>
 <script src="site_libs/quarto-dashboard/stickythead.js"></script>
 
@@ -86,12 +81,19 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <link href="site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+
 <script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
 <script src="site_libs/raphael-2.1.4/raphael-2.1.4.min.js"></script>
+
 <link href="site_libs/justgage-1.2.2.1/justgage.css" rel="stylesheet">
+
 <script src="site_libs/justgage-1.2.2.1/justgage.js"></script>
+
 <script src="site_libs/gauge-binding-0.6.3/gauge.js"></script>
+
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+
 
 
 </head>
@@ -104,6 +106,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">The Tave</span>
     </a>
@@ -209,8 +213,8 @@ Last day’s dropR downloads ( 2026-08-29 ), compared to last week’s maximum n
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output-display html-fill-item html-fill-container">
-<div class="gauge html-widget html-fill-item html-fill-container" id="htmlwidget-482b1318ec11efd585fa" style="width:100%;height:406px;"></div>
-<script type="application/json" data-for="htmlwidget-482b1318ec11efd585fa">{"x":{"value":7,"min":0,"max":10,"customSectors":{"percents":false,"ranges":[{"lo":6,"hi":10,"color":"rgba(63, 182, 24, 0.7)"},{"lo":0,"hi":5,"color":"rgba(255, 0, 57, 0.7)"}]},"symbol":null,"label":null,"humanFriendly":true,"humanFriendlyDecimal":1,"href":null},"evals":[],"jsHooks":[]}</script>
+<div class="gauge html-widget html-fill-item html-fill-container" id="htmlwidget-36c2d3248c416a5d3802" style="width:100%;height:406px;"></div>
+<script type="application/json" data-for="htmlwidget-36c2d3248c416a5d3802">{"x":{"value":7,"min":0,"max":10,"customSectors":{"percents":false,"ranges":[{"lo":6,"hi":10,"color":"rgba(63, 182, 24, 0.7)"},{"lo":0,"hi":5,"color":"rgba(255, 0, 57, 0.7)"}]},"symbol":null,"label":null,"humanFriendly":true,"humanFriendlyDecimal":1,"href":null},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
