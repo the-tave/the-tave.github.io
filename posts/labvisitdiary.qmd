@@ -13,6 +13,20 @@ date: 08/31/2026
 # image-alt: "Purple and red mandala created in Matlab."
 ---
 
+## Sep 3rd: Getting Settled
+
+It has been less than a week and I'm starting to feel like I'm settling in to life at Cornell.
+The introduction to the grad class on Monday went really well and I got so many insightful questions to my work and projects.
+
+The next day, we got to talk even more in depth about the project I'll mainly be focusing on this month.
+It involves a lot of new skills for me, including app development (outside of [Shiny](https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/)), formulating gist vs. verbatim statements and of course, navigating a new lab and campus.
+Luckily, I got a lot of great input, ideas and feedback in the meeting and - thanks to AI - already have a first rough draft of what the app might turn into. 
+
+This morning I went for my first run here and really underestimated the effect of the steep hills.
+After that, I decided to walk to campus.
+Was it a smart move at around 85%+ humidity? 
+Probably not, but it's true what they say: Ithaca is Gorges!
+
 ## Aug 31st: Arrival
 
 Luckily, my skill to dribble jet lag when flying to the US is strong and I was able to sleep through my first night after arriving in Ithaca on Sunday.
